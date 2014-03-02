@@ -40,6 +40,17 @@ header{
 	font-weight: bold;
 }
 
+.paraph{
+	margin: 10px 0px;
+}
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
 
 /* -------------   LOGO   ------------- */
 #logo-gym-title{
@@ -54,13 +65,22 @@ header{
 }
 
 
-/* -------------   BULLE   ------------- */
+/* -------------   BULLE (THEME)   ------------- */
 .bubble-topic{
 	background-color:#272727;
 	border-radius:50%;
-	width:350px;
-	height:350px;
+	width:400px;
+	height:400px;
 	margin: 20px auto;
+}
+
+.topic-txt-center{
+	padding: 0px 50px;
+	text-align: center;
+}
+
+.topic-txt{
+	padding: 0px 80px;
 }
 
 .bubble-activity{
@@ -73,7 +93,8 @@ header{
 
 
 .bubble-title{
-	margin-top: 20px;
+	padding-top: 20px;
+	height: 105px;
 }
 
 .bubble-title-top{
@@ -104,4 +125,36 @@ header{
 	height:50px;
 	top: -45px;
 	left: -10px;
+}
+
+.title-theme{
+	font-size: 2.142857142857143em;
+	text-align: center;
+	padding-left: 10px;
+}
+
+
+
+
+
+/* -------------   BACKGROUND COLOR   ------------- */
+
+.turquoise-bkg{
+	background-color: #17c58d;
+}
+
+.yellow-bkg{
+	background-color: #c59517;
+}
+
+.blue-bkg{
+	background-color: #1791c5;
+}
+
+.orange-bkg{
+	background-color: #c95e16;
+}
+
+.green-bkg{
+	background-color: #4fc816;
 }
