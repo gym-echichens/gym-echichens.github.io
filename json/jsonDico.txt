@@ -1,0 +1,21 @@
+{
+	"history":{
+		"title":"Histoire"
+	},
+
+	"tariff":{
+		"title":"Tarifs"
+	},
+
+	"download":{
+		"title":"Téléchargement"
+	},
+
+	"contact":{
+		"title":"Contact"
+	},
+
+	"activity":{
+		"title": "Activité"
+	}
+}
