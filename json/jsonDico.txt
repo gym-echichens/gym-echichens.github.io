@@ -44,7 +44,11 @@
 	},
 	"download":{
 		"title":"Download",
-		"text":""
+		"paraph1":"Téléchargez notre programme au format PDF ou relisez les PV des années précédentes...",
+		"programme": "Programme 2013-2014",
+		"pv1": "Procès verbal 2013",
+		"pv2": "Procès verbal 2012",
+		"status":"Status de la société (2012)"
 	},
 	"contact":{
 		"title":"Contact",

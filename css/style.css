@@ -6,6 +6,8 @@
 	COULEUR
 	Body background: #2d2d2d;
 	Rond noir: #272727;
+	Magenta logo et <a>: #c5174f;
+	<a> hover: #d84373;
 
 
 */
@@ -24,6 +26,14 @@ footer{
 
 header{
 	padding: 80px 0px 100px 0px;
+}
+
+a{
+	color:#c5174f;
+}
+
+a:hover{
+	color:#d84373;
 }
 
 .box-center{
@@ -133,8 +143,14 @@ header{
 	padding-left: 10px;
 }
 
+.links{
+	margin-top: 20px;
+	font-size:1.285714285714286em;
+}
 
-
+.links > div{
+	margin: 10px 0px;
+}
 
 
 /* -------------   BACKGROUND COLOR   ------------- */

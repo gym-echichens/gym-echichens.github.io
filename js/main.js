@@ -71,6 +71,15 @@ var gym = {
 									'<div class="title-theme"><%= dico.title %></div>'+
 								'</div>'+
 							'</div>'+
+							'<div class="topic-txt-center">'+
+								'<div><%= dico.paraph1 %></div><br />'+
+								'<div class="bold links">'+
+									'<div><a href="download/programme2013-2014.pdf"><%= dico.programme %></a></div>'+
+									/*'<div><a href="download/pv2013.pdf"><%= dico.pv1 %></a></div>'+*/
+									'<div><a href="download/pv2012.pdf"><%= dico.pv2 %></a></div>'+
+									'<div><a href="download/status2012.pdf"><%= dico.status %></a></div>'+
+								'</div>'+
+							'</div>'+
 						'</div>'+
 					'</div>',
 	
@@ -117,8 +126,29 @@ var gym = {
       },
 
 
+    getTpl: function(xUrl){
+      	var self = this;
+		$.ajax({
+			type: "GET",
+			dataType: "text",
+			async: false,
+			url:xUrl,
+			success: function(data){    
+				return data;
+			},
+			error: function (xhr, ajaxOptions, thrownError) {
+			   console.log(xhr);
+			   console.log(ajaxOptions);
+			   console.log(thrownError);
+			}
+		});
+    },
+
+
     /*-------------- INIT FUNCTIONS ---------------*/
 	renderBubble: function(){
+		//var frameTpl = this.getTpl('templates/frameTpl.html');
+
 
         $('#main-box').html(this.frameHTML);
 
