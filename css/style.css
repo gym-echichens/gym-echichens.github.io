@@ -34,6 +34,15 @@ a{
 
 a:hover{
 	color:#d84373;
+	text-decoration: none;
+}
+
+h3{
+	padding: 0px;
+}
+
+.margin{
+	margin: 30px 0px 40px 0px;
 }
 
 .box-center{
@@ -72,6 +81,22 @@ a:hover{
 
 #logo-gym-img{
 	float:left;
+}
+
+/* -------------   ACTIVITY   ------------- */
+
+.activityDescription{
+	margin-top: 20px;
+}
+
+.paraph{
+	margin: 20px 0px;
+}
+
+#activity7 .bubble-activity{
+	background-image: url('../img/activity7.png');
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 

@@ -52,10 +52,71 @@
 	},
 	"contact":{
 		"title":"Contact",
-		"text":""
+		"paraph1":"Pour toutes informations sur les activités et /ou concernant les inscriptions, écrivez-nous !",
+		"mail":"gym-echichens@bluewin.ch",
+		"company":"Gymnastique Echichens",
+		"postal":"Case postale 57",
+		"city":"1112 Echichens"
+
 	},
 	"activity":{
 		"title": "Activité",
-		"text":""
+		"paraph1":"Toutes les activités se déroulent  pendant la période scolaire et sont suspendues pendant les vacances.",
+		"activity1":{
+			"name":"GROUPE PARENTS & ENFANTS",
+			"description":"Description: -",
+			"age":"Age: Dès 2 1/2",
+			"leader":"Responsable: Daniela Samore - 076 434 97 23",
+			"schedule":"Horaire: Tous les lundi de 8h50 à 9h50",
+			"note":"Remarque: Les membres qui désirent prendre part aux deux groupes gym-dames et parents-enfants bénéficient d’un forfait de CHF 210.00 (au lieu de CHF 300.00)."
+		},
+		"activity2":{
+			"name":"GROUPE ENFANTINE",
+			"description":"Description: -",
+			"age":"Age: 1P et 2P ",
+			"leader":"Responsable: Eliane Felix - 021 801 99 72",
+			"schedule":"Horaire: Tous les mardi de 16h30 à 17h30",
+			"note":"Remarques: Les enfants peuvent prendre leur goûter dans la salle dès 16 heures."
+		},
+		"activity3":{
+			"name":"GROUPE JEUNESSE",
+			"description":"Description: -",
+			"age":"Age: 3P et plus",
+			"leader":"Responsable: Eliane Felix - 021 801 99 72",
+			"schedule":"Horaire: Tous les mardi de 17h45 à 18h45",
+			"note":"Remarque: -"
+		},
+		"activity4":{
+			"name":"GROUPE GYM - DAMES MATIN",
+			"description":"Description:",
+			"age":"Age: Dès 16 ans",
+			"leader":"Responsable: Catherine Perey - 021 861 34 48",
+			"schedule":"Horaire: Tous les mardi de 8h30 à 9h30",
+			"note":"Remarques: Les membres qui désirent prendre part aux deux groupes gym-dames et parents-enfants bénéficient d’un forfait de CHF 210.00 (au lieu de CHF 300.00)."
+		},
+		"activity5":{
+			"name":"GROUPE GYM - DAMES SOIR",
+			"description":"Description:",
+			"age":"Age: 1P et 2P",
+			"leader":"Responsable: Eliane Felix - 021 801 99 72",
+			"schedule":"Horaire: Tous les mardi de 20h15 à 21h15",
+			"note":"Remarque:  Les membres qui désirent prendre part aux deux groupes gym-dames et parents-enfants bénéficient d’un forfait de CHF 210.00 (au lieu de CHF 300.00)."
+		},
+		"activity6":{
+			"name":"GROUPE GYM - DAMES SENIORS",
+			"description":"Description: Gymnastique douce",
+			"age":"Age: Séniors",
+			"leader":"Responsables: Eliane Felix - 021 801 99 72 & Paquita Aeschlimann - 021 801 89 35",
+			"schedule":"Horaire: Tous les lundi de 16h00 à 17h00",
+			"note":"Remarque: -"
+		},
+		"activity7":{
+			"name":"GROUPE GYM – ADULTES MIXTES",
+			"description":"Description: 1er partie Volleyball, 2ème partie unihockey",
+			"age":"Age: Séniors",
+			"leader":"Responsables: Gaël Rochat – 079 384 58 23 & Benoît Horisberger – 078 797 90 22",
+			"schedule":"Horaire: Tous les mercredi de 20h30 à ~22h30",
+			"note":"Remarque: Remarques:  Possibilité de payé à la fois CHF 5.-"
+		}
 	}
 }
