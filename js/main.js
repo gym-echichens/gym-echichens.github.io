@@ -3,8 +3,7 @@ var gym = {
 	dico:null,
 
 	init: function(){
-		this.getDico();
-		
+		this.getDico();		
 	},
 
 	/*------------- HTML -------------*/
@@ -245,6 +244,9 @@ var gym = {
 		this.renderDownload();
 		this.renderContact();
 		this.renderActivity();
+
+		this.loadBackground();
+		
          
 	},
 
@@ -279,6 +281,38 @@ var gym = {
         var compiledTpl = _.template(this.activityHTML, dataTpl);
         $('#activity-box').html(compiledTpl);
 	},
+
+	loadBackground: function(){
+
+		var winHeight = $('footer').position().bottom;
+
+	   	var createBubble =  setInterval(function() {
+	   		if($('bubble-white').length < 50){
+	   			for(var i = 0; i < 10; i++){
+					var dia = Math.floor((Math.random()*100)+1); 
+					var left = Math.floor((Math.random()*100)+1); 
+					var timer = Math.floor((Math.random()*100000)+10); 
+
+					var div = document.createElement("div");
+					div.setAttribute("class", "bubble-white");
+					div.style.position = 'absolute';
+					div.style.width = dia+"px";
+					div.style.height = dia+"px";
+					div.style.left = left+"%";
+					div.style.bottom = (-winHeight-100)+"px";
+
+					$('body').append(div);
+
+					$(div).animate({ top: "-100px" }, timer , "linear", function() {
+						$(this).remove();
+					});
+
+				}
+	   		}
+	       
+	    }, 4000);
+
+	}
 
 
 

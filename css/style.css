@@ -17,6 +17,7 @@ body{
 	font-family: "Myriad pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 	background-color: #2d2d2d;
 	color: #f2f2f2;
+	overflow-x: hidden;
 }
 
 footer{
@@ -175,6 +176,13 @@ h3{
 
 .links > div{
 	margin: 10px 0px;
+}
+
+.bubble-white{
+	position: absolute;
+	background-color:#ffffff;
+	opacity: 0.01;
+	border-radius:50%;
 }
 
 

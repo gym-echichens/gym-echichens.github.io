@@ -116,7 +116,7 @@
 			"age":"Age: Séniors",
 			"leader":"Responsables: Gaël Rochat – 079 384 58 23 & Benoît Horisberger – 078 797 90 22",
 			"schedule":"Horaire: Tous les mercredi de 20h30 à ~22h30",
-			"note":"Remarque: Remarques:  Possibilité de payé à la fois CHF 5.-"
+			"note":"Remarques: Possibilité de payé à la fois CHF 5.-"
 		}
 	}
 }
