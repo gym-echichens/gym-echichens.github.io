@@ -98,12 +98,21 @@ h3{
 	background-image: url('../img/activity7.png');
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-color: transparent; !important;
+	width: 166px;
+	height: 166px;
+}
+
+.activityBox{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 
 /* -------------   BULLE (THEME)   ------------- */
 .bubble-topic{
-	background-color:#272727;
+	/*background-color:#272727;*/
+	background-color: #3c3c3c; 
 	border-radius:50%;
 	width:400px;
 	height:400px;
@@ -120,10 +129,11 @@ h3{
 }
 
 .bubble-activity{
-	background-color:#272727;
+	/*background-color:#272727;*/
+	background-color: #3c3c3c; 
 	border-radius:50%;
-	width:200px;
-	height:200px;
+	width:166px;
+	height:166px;
 	margin: 10px;
 }
 
@@ -135,7 +145,8 @@ h3{
 
 .bubble-title-top{
 	position: relative;
-	background-color:#272727;
+	/*background-color:#272727;*/
+	background-color: #3c3c3c; 
 	border-radius:50%;
 	width:200px;
 	height:50px;
@@ -192,8 +203,8 @@ h3{
 	background-color: #17c58d;
 }
 
-.yellow-bkg{
-	background-color: #c59517;
+.red-bkg{
+	background-color: #be2121;
 }
 
 .blue-bkg{
