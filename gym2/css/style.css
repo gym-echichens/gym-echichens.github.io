@@ -7,7 +7,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 header{
@@ -42,6 +42,59 @@ a, a:hover, a:visited{
 	color: #C3C3C3;
 }
 
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+.nav-icon{
+	display:none;
+}
+
+/* screens ----------- */
+@media all and (max-width: 1024px) {
+	.nav-txt{
+		display:none !important;
+	}
+
+	.nav-icon{
+		display:block !important;
+	}
+
+	#logo-gym{
+		display:none;
+	}
+}
+
+.nav-icon li{
+	height: 70px;
+	min-width: 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.nav-icon #nav-home{
+	background-image: url('../img/home_icon.png');
+}
+
+.nav-icon #nav-tariff{
+	background-image: url('../img/contact_tariff_icon.png');
+	width: 77px !important;
+	min-width: 90px;
+}
+
+.nav-icon #nav-download{
+	background-image: url('../img/download_icon.png');
+}
+
+.nav-icon #nav-activity{
+	background-image: url('../img/activity_icon.png');
+}
+
 .nav-menu{
 	float: left;
 	margin: 0px;
@@ -51,16 +104,12 @@ a, a:hover, a:visited{
 }
 
 .nav-menu:hover{
-	background-color: #bbbbbb;
+	background-color: #02AEC8;
 	color:#2d2d2d;
 }
 
-.nav-black:hover{
-	background-color: #bbbbbb !important;
-}
-
 .nav-turquoise:hover{
-	background-color: #00BFAF !important;
+	background-color: #02AEC8 !important;
 }
 
 .nav-yellow:hover{
@@ -92,42 +141,46 @@ a, a:hover, a:visited{
 	min-height:1024px;
 }
 
+
 #logo-gym{
-	background-image: url('../img/logo_gym_magenta_white.png');
-	width: 260px;
-	height: 267px;
-	background-repeat: no-repeat;
-	margin-top: 80px;
+	opacity:0;
+	position: relative;
+    top: 10px;
+	width: 150px;
+	height: 150px;
+	margin-right:50px;
+	border: solid 5px #7f7f7f;
+	background-color: #3a3a3a;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border-radius: 150px;
+	z-index: 777;
 }
+
 
 #descri{
 	margin-top: 50px;
 	min-width: 300px;
-	width: 900px;
+	max-width: 800px;
+	width: 100%;
 }
 
 #descri h1{
 	font-size: 64px;
 	margin-bottom: 20px;
-	text-align: center;
 }
 
 #council{
-	text-align: center;
 	font-weight: bold;
 	line-height: 1.6em;
-	margin-bottom: 20px ;
+	margin-bottom: 10px ;
 }
 
 
 /* START set frame background color --------*/
 
 #home{
-	background-color: #525252;
-}
-
-#newsContact{
-	background-color: #00BFAF;
+	background-color: #02AEC8;
 }
 
 #tariff{
@@ -149,17 +202,17 @@ a, a:hover, a:visited{
 
 /* START set background man/woman sport ---------*/
 
-#newsContact .box{
+#home .box{
 	background-image: url('../img/man_basket_bkg.png');
 	background-repeat: no-repeat;
-	background-position: 10% 80%;
+	background-position: 90% 80%;
 }
 
 
 #tariff .box{
 	background-image: url('../img/woman_stretch_bkg.png');
 	background-repeat: no-repeat;
-	background-position: 80% 30% ;
+	background-position: 55% 80% ;
 }
 
 #download .box{
@@ -173,10 +226,7 @@ a, a:hover, a:visited{
 
 
 #news-box{
-	position: relative;
-	left: 0px;
-	top: 0px;
-	display: inline-block;
+	margin-top: 70px;
 }
 
 .news-item-box{
@@ -189,7 +239,7 @@ a, a:hover, a:visited{
 
 #contact-box{
 	position: absolute;
-	right: 0px;
+	right: 5%;
 	top: 50%;
 }
 
@@ -214,7 +264,8 @@ a, a:hover, a:visited{
 /* START tariff table --------------------------------------------*/
 
 #tariff-box table{
-	width: 400px;
+	max-width: 400px;
+	width: 100%;
 	border-collapse: separate;
 }
 
@@ -238,6 +289,10 @@ a, a:hover, a:visited{
 	background-color: #DBB369;
 }
 
+
+#tariff-box tr:nth-child(even) {
+	background-color: #D4A756;
+}
 
 
 .rounded td:first-child{
@@ -437,12 +492,14 @@ a, a:hover, a:visited{
 .infos .time{
 	background-image: url('../img/time_icon.png');
 	background-repeat: no-repeat;
+	white-space: nowrap;
 }
 
 .infos .contact{
 	background-image: url('../img/contact_icon.png');
 	background-repeat: no-repeat;
 	padding-top: 0px !important;
+	white-space: nowrap;
 }
 
 .list-descri li{
@@ -450,7 +507,7 @@ a, a:hover, a:visited{
 	margin: 0px !important;
 	text-align: left !important;
 	float: none !important;
-	height: 30px !important;
+	height: auto !important;
 }
 
 .list-descri{

@@ -2,11 +2,10 @@ define([
   'jquery',
   'underscore',
   'text!templates/home.html',
-  'text!templates/newsContact.html',
   'text!templates/tariff.html',
   'text!templates/download.html',
   'text!templates/activity.html',
-], function($,_, HomeTpl, NewsContactTpl, TariffTpl, DownloadTpl, ActivityTpl){
+], function($,_, HomeTpl, TariffTpl, DownloadTpl, ActivityTpl){
  
   var Gym = {
 
@@ -21,8 +20,44 @@ define([
       if(this.HEIGHT > 1024){
          $('.panels').css("min-height",this.HEIGHT +'px');
       }
-*/
-     
+*/    
+
+
+      var self = this;
+      $(window).scroll(function(e) {
+        var pos = $(this).scrollTop();
+
+          if(pos >= 0 && pos<= 20){
+            $('#logo-gym').css({ opacity: 1 });
+          }else if(pos > 20 && pos <= 40){
+            $('#logo-gym').css({ opacity: 0.9 });
+          }else if(pos > 40 && pos<= 60){
+            $('#logo-gym').css({ opacity: 0.8 });
+          }else if(pos > 60 && pos<= 80){
+            $('#logo-gym').css({ opacity: 0.7 });
+          }else if(pos > 80 && pos<= 100){
+            $('#logo-gym').css({ opacity: 0.6 });
+          }else if(pos > 100 && pos<= 120){
+            $('#logo-gym').css({ opacity: 0.5 });
+          }else if(pos > 120 && pos<= 140){
+            $('#logo-gym').css({ opacity: 0.4 });
+          }else if(pos > 140 && pos<= 160){
+            $('#logo-gym').css({ opacity: 0.3 });
+          }else if(pos > 160 && pos<= 180){
+            $('#logo-gym').css({ opacity: 0.2 });
+          }else if(pos > 180 && pos<= 200){
+            $('#logo-gym').css({ opacity: 0.1 });
+          }else{
+            $('#logo-gym').css({ opacity: 0 });
+          }
+           
+          $('#logo-gym').css({ top: (pos+10)+'px' });
+        
+        
+      });
+
+      $(window).scroll();
+
 
       this.render();
 
@@ -54,30 +89,28 @@ define([
         var position = $(window).scrollTop() + 70;
 
         if(position < ($('#main #home').offset().top + $('#main #home').height())){
-          $('.nav-menu').removeClass('nav-turquoise nav-yellow nav-red nav-green').addClass('nav-black');
-
-        }else if (position < ($('#main #newsContact').offset().top + $('#main #newsContact').height())){
-          $('.nav-menu').removeClass('nav-black nav-yellow nav-red nav-green').addClass('nav-turquoise');
+          $('.nav-menu').removeClass('nav-yellow nav-red nav-green').addClass('nav-turquoise');
 
         }else if (position < ($('#main #tariff').offset().top + $('#main #tariff').height())){
-           $('.nav-menu').removeClass('nav-black nav-turquoise nav-red nav-green').addClass('nav-yellow');
+           $('.nav-menu').removeClass('nav-turquoise nav-red nav-green').addClass('nav-yellow');
 
         }else if (position < ($('#main #download').offset().top + $('#main #download').height())){
-           $('.nav-menu').removeClass('nav-black nav-turquoise nav-yellow nav-green').addClass('nav-red');
+           $('.nav-menu').removeClass('nav-turquoise nav-yellow nav-green').addClass('nav-red');
 
         }else if (position < ($('#main #activity').offset().top + $('#main #activity').height())){
-           $('.nav-menu').removeClass('nav-black nav-turquoise nav-yellow nav-red').addClass('nav-green');
+           $('.nav-menu').removeClass('nav-turquoise nav-yellow nav-red').addClass('nav-green');
         }
 
         
       });
+
+      $(window).scroll();
 
 
     },
 
     render: function(){
       this.renderHome();
-      this.renderNewsContact();
       this.renderTariff();
       this.renderDownload();
       this.renderActivity();
@@ -91,13 +124,6 @@ define([
       $('#home').html(compiledTpl);
     },
 
-
-    renderNewsContact: function(){
-      var dataTpl = {};
-      var compiledTpl = _.template(NewsContactTpl, dataTpl);
-
-      $('#newsContact').html(compiledTpl);
-    },
 
     renderTariff: function(){
       var dataTpl = {};
