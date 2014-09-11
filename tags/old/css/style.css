@@ -1,0 +1,224 @@
+/*
+
+	SOCIETE DE GYM D'ECHICHENS
+	author: Benoît Horisberger
+	
+	COULEUR
+	Body background: #2d2d2d;
+	Rond noir: #272727;
+	Magenta logo et <a>: #c5174f;
+	<a> hover: #d84373;
+
+
+*/
+
+
+body{
+	font-family: "Myriad pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #2d2d2d;
+	color: #f2f2f2;
+	overflow-x: hidden;
+}
+
+footer{
+	font-size: 0.8571428571428571em;
+	padding: 80px 0px 50px 0px;
+}
+
+header{
+	padding: 80px 0px 100px 0px;
+}
+
+a{
+	color:#c5174f;
+}
+
+a:hover{
+	color:#d84373;
+	text-decoration: none;
+}
+
+h3{
+	padding: 0px;
+}
+
+.margin{
+	margin: 30px 0px 40px 0px;
+}
+
+.box-center{
+	position: relative;
+	width: 100%;
+}
+
+.el-center{
+	margin: 0px auto;
+	display: table;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.paraph{
+	margin: 10px 0px;
+}
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+/* -------------   LOGO   ------------- */
+#logo-gym-title{
+	font-size: 2.571428571428571em;
+	display: table-cell;
+  	vertical-align:middle;
+  	padding-left: 15px;
+}
+
+#logo-gym-img{
+	float:left;
+}
+
+/* -------------   ACTIVITY   ------------- */
+
+.activityDescription{
+	margin-top: 20px;
+}
+
+.paraph{
+	margin: 20px 0px;
+}
+
+#activity7 .bubble-activity{
+	background-image: url('../img/activity7.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: transparent; !important;
+	width: 166px;
+	height: 166px;
+}
+
+.activityBox{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* -------------   BULLE (THEME)   ------------- */
+.bubble-topic{
+	/*background-color:#272727;*/
+	background-color: #3c3c3c; 
+	border-radius:50%;
+	width:400px;
+	height:400px;
+	margin: 20px auto;
+}
+
+.topic-txt-center{
+	padding: 0px 50px;
+	text-align: center;
+}
+
+.topic-txt{
+	padding: 0px 80px;
+}
+
+.bubble-activity{
+	/*background-color:#272727;*/
+	background-color: #3c3c3c; 
+	border-radius:50%;
+	width:166px;
+	height:166px;
+	margin: 10px;
+}
+
+
+.bubble-title{
+	padding-top: 20px;
+	height: 105px;
+}
+
+.bubble-title-top{
+	position: relative;
+	/*background-color:#272727;*/
+	background-color: #3c3c3c; 
+	border-radius:50%;
+	width:200px;
+	height:50px;
+	top: -45px;
+	left: -10px;
+}
+
+.bubble-title-bottom{
+	position: relative;
+	background-color:#ff00ff;
+	border-radius:50%;
+	width:200px;
+	height:50px;
+	top: 10px;
+}
+
+
+.bubble-title-top-activity{
+	position: relative;
+	background-color:#2d2d2d;
+	border-radius:50%;
+	width:200px;
+	height:50px;
+	top: -45px;
+	left: -10px;
+}
+
+.title-theme{
+	font-size: 2.142857142857143em;
+	text-align: center;
+	padding-left: 10px;
+}
+
+.links{
+	margin-top: 20px;
+	font-size:1.285714285714286em;
+}
+
+.links > div{
+	margin: 10px 0px;
+}
+
+.bubble-white{
+	position: absolute;
+	background-color:#ffffff;
+	opacity: 0.01;
+	border-radius:50%;
+}
+
+
+/* -------------   BACKGROUND COLOR   ------------- */
+
+.turquoise-bkg{
+	background-color: #17c58d;
+}
+
+.red-bkg{
+	background-color: #be2121;
+}
+
+.blue-bkg{
+	background-color: #1791c5;
+}
+
+.orange-bkg{
+	background-color: #c95e16;
+}
+
+.green-bkg{
+	background-color: #4fc816;
+}
+
+.purple-bkg{
+	background-color: #A901DB;
+}
