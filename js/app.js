@@ -1,11 +1,13 @@
 define([
   'jquery',
   'underscore',
+  'galleria',
   'text!templates/home.html',
   'text!templates/tariff.html',
   'text!templates/download.html',
   'text!templates/activity.html',
-], function($,_, HomeTpl, TariffTpl, DownloadTpl, ActivityTpl){
+  'text!templates/pic.html',
+], function($,_, Galleria, HomeTpl, TariffTpl, DownloadTpl, ActivityTpl, PicTpl){
  
   var Gym = {
 
@@ -86,16 +88,19 @@ define([
         var position = $(window).scrollTop() + 70;
 
         if(position < ($('#main #home').offset().top + $('#main #home').height())){
-          $('.nav-menu').removeClass('nav-yellow nav-red nav-green').addClass('nav-turquoise');
+          $('.nav-menu').removeClass('nav-yellow nav-red nav-green nav-violet').addClass('nav-turquoise');
 
         }else if (position < ($('#main #tariff').offset().top + $('#main #tariff').height())){
-           $('.nav-menu').removeClass('nav-turquoise nav-red nav-green').addClass('nav-yellow');
+           $('.nav-menu').removeClass('nav-turquoise nav-red nav-green nav-violet').addClass('nav-yellow');
 
         }else if (position < ($('#main #download').offset().top + $('#main #download').height())){
-           $('.nav-menu').removeClass('nav-turquoise nav-yellow nav-green').addClass('nav-red');
+           $('.nav-menu').removeClass('nav-turquoise nav-yellow nav-green nav-violet').addClass('nav-red');
 
         }else if (position < ($('#main #activity').offset().top + $('#main #activity').height())){
-           $('.nav-menu').removeClass('nav-turquoise nav-yellow nav-red').addClass('nav-green');
+           $('.nav-menu').removeClass('nav-turquoise nav-yellow nav-red nav-violet').addClass('nav-green');
+        }
+        else if (position < ($('#main #pic').offset().top + $('#main #pic').height())){
+           $('.nav-menu').removeClass('nav-turquoise nav-yellow nav-red nav-green').addClass('nav-violet');
         }
 
         
@@ -111,6 +116,7 @@ define([
       this.renderTariff();
       this.renderDownload();
       this.renderActivity();
+      this.renderPic();
 
       this.setMenuEvents();
     },
@@ -143,6 +149,21 @@ define([
       var compiledTpl = _.template(ActivityTpl, dataTpl);
 
       $('#activity').html(compiledTpl);
+    },
+
+    renderPic: function(){
+      var dataTpl = {};
+      var compiledTpl = _.template(PicTpl, dataTpl);
+
+      $('#pic').html(compiledTpl);
+
+      Galleria.loadTheme('./js/libs/themes/classic/galleria.classic.min.js');
+      Galleria.configure({
+        responsive: true,
+        showInfo: false
+      });
+      Galleria.run('.galleria');
+     
     }
 
 

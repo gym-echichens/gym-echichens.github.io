@@ -27,7 +27,7 @@ header ul{
 }
 
 footer{
-	background-color: #88B345;
+	background-color: #585858;
 	font-size: 14px;
 	padding: 20px 0px;
 }
@@ -95,6 +95,10 @@ a, a:hover, a:visited{
 	background-image: url('../img/activity_icon.png');
 }
 
+.nav-icon #nav-pic{
+	background-image: url('../img/pic_icon.png');
+}
+
 .nav-menu{
 	float: left;
 	margin: 0px;
@@ -122,6 +126,10 @@ a, a:hover, a:visited{
 
 .nav-green:hover{
 	background-color: #88B345 !important;
+}
+
+.nav-violet:hover{
+	background-color: #585858 !important;
 }
 
 .box{
@@ -193,6 +201,10 @@ a, a:hover, a:visited{
 
 #activity{
 	background-color: #88B345;
+}
+
+#pic{
+	background-color: #585858;
 }
 /* END ---------------------------------------*/
 
@@ -515,3 +527,51 @@ a, a:hover, a:visited{
 }
 
 /* END activity ----------------------------------------------*/
+
+
+/* START picture ----------------------------------------------*/
+
+.galleria{ 
+	width: 100%;
+	height: 800px;
+	max-width: 1200px; 
+	max-height: 800px; 	
+}
+
+
+.galleria-theme-classic {
+	/*background-color: #585858;*/
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	.galleria{ 
+		height: 300px;
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.galleria{ 
+		height: 500px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992px) { 
+	.galleria{ 
+		height: 650px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:1200px) { 
+	.galleria{ 
+		height: 800px;
+	}
+}
+
+
+/* END picture ----------------------------------------------*/
