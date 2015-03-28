@@ -18,7 +18,6 @@ require.config({
       jquery: 'libs/jquery-min',
       underscore: 'libs/underscore-min',
       bootstrap: 'libs/bootstrap-min',
-      galleria: 'libs/galleria-min',
       templates: '../templates',
       text: 'libs/text'
    }
