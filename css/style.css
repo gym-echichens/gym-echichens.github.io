@@ -575,11 +575,3 @@ a, a:hover, a:visited{
 /* END activity ----------------------------------------------*/
 
 
-#carousel{
-	height: 700px;
-	display: inline-block;
-}
-
-#carousel img{
-	max-height: 700px;
-}
