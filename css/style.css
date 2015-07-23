@@ -483,6 +483,13 @@ a, a:hover, a:visited{
 	font-size: 24px;
 }
 
+#resp-img-none{
+	width: 160px;
+	height: 160px;
+	margin-top: 20px;
+	background-image: url('../img/none.png');
+}
+
 #resp-img1{
 	width: 160px;
 	height: 160px;
@@ -574,4 +581,12 @@ a, a:hover, a:visited{
 
 /* END activity ----------------------------------------------*/
 
+
+
+/* START picture --------------------------------------------*/
+.carousel{
+	max-width: 1050px;
+}
+
+/* END picture --------------------------------------------*/
 

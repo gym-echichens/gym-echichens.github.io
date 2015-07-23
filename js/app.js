@@ -2,14 +2,13 @@ define([
   'jquery',
   'underscore',
   'bootstrap',
-  'slider',
   'text!templates/home.html',
   'text!templates/events.html',
   'text!templates/tariff.html',
   'text!templates/download.html',
   'text!templates/activity.html',
   'text!templates/pic.html',
-], function($,_, bootstrap, Slider, HomeTpl, EventsTpl, TariffTpl, DownloadTpl, ActivityTpl, PicTpl){
+], function($,_, bootstrap, HomeTpl, EventsTpl, TariffTpl, DownloadTpl, ActivityTpl, PicTpl){
  
   var Gym = {
 
@@ -170,8 +169,8 @@ define([
 
       $('#pic').html(compiledTpl);
 
-      this.carousel === null ? this.carousel = new flux.slider('#carousel', {autoplay: false, pagination: true, controls:true, transitions: ['turn'], delay: 3000}) : null;
-     
+      $('#carousel').carousel();
+      $('#carousel2').carousel(); 
     }
 
 

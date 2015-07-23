@@ -9,10 +9,6 @@ require.config({
     	   deps: ['jquery'],
     	   exports: 'Bootstrap'
     },
-    'slider':{
-         deps: ['jquery'],
-         exports: 'Slider'
-    },
     'underscore': {
         exports: '_'
     }
@@ -24,7 +20,6 @@ require.config({
       bootstrap: 'libs/bootstrap-min',
       templates: '../templates',
       text: 'libs/text',
-      slider:'libs/flux-slider-min'
    }
 });
 
