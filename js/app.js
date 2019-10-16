@@ -3,12 +3,11 @@ define([
   'underscore',
   'bootstrap',
   'text!templates/home.html',
-  'text!templates/events.html',
   'text!templates/tariff.html',
   'text!templates/download.html',
   'text!templates/activity.html',
   'text!templates/pic.html',
-], function($,_, bootstrap, HomeTpl, EventsTpl, TariffTpl, DownloadTpl, ActivityTpl, PicTpl){
+], function($,_, bootstrap, HomeTpl, TariffTpl, DownloadTpl, ActivityTpl, PicTpl){
  
   var Gym = {
 
@@ -92,9 +91,6 @@ define([
         if(position < ($('#main #home').offset().top + $('#main #home').height())){
           $('.nav-menu').removeClass('nav-yellow nav-red nav-green nav-black nav-purple').addClass('nav-turquoise');
 
-        }else if (position < ($('#main #events').offset().top + $('#main #events').height())){
-          $('.nav-menu').removeClass('nav-turquoise nav-red nav-green nav-black nav-yellow').addClass('nav-purple');
-
         }else if (position < ($('#main #tariff').offset().top + $('#main #tariff').height())){
            $('.nav-menu').removeClass('nav-turquoise nav-red nav-green nav-black nav-purple').addClass('nav-yellow');
 
@@ -117,7 +113,6 @@ define([
 
     render: function(){
       this.renderHome();
-      this.renderEvents();
       this.renderTariff();
       this.renderDownload();
       this.renderActivity();
@@ -133,14 +128,6 @@ define([
 
       $('#home').html(compiledTpl);
     },
-
-    renderEvents: function(){
-      var dataTpl = {};
-      var compiledTpl = _.template(EventsTpl, dataTpl);
-
-      $('#events').html(compiledTpl);
-    },
-
 
     renderTariff: function(){
       var dataTpl = {};
