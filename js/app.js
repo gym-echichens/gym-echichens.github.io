@@ -116,7 +116,7 @@ define([
       this.renderTariff();
       this.renderDownload();
       this.renderActivity();
-    //  this.renderPic();
+      this.renderPic();
 
       this.setMenuEvents();
     },
